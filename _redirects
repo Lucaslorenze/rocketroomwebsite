@@ -1,0 +1,10 @@
+# Redirecciones 301 de los subdominios viejos a las nuevas rutas.
+# Requiere que cada subdominio apunte a este mismo sitio en Netlify.
+https://cowork.rocketroom.com.ar/*    https://rocketroom.com.ar/cowork/:splat    301!
+https://oficinas.rocketroom.com.ar/*  https://rocketroom.com.ar/oficinas/:splat  301!
+
+# Las salas dejaron de ofrecerse como producto público: quedan como beneficio
+# incluido en los planes. Todo lo que apuntaba a salas va a oficinas.
+https://salas.rocketroom.com.ar/*     https://rocketroom.com.ar/oficinas/        301!
+/salas                                /oficinas/                                 301!
+/salas/*                              /oficinas/                                 301!
